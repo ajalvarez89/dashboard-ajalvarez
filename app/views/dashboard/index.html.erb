@@ -3,7 +3,7 @@
     <!-- Brand -->
     <div class="sidenav-header  align-items-center">
       <a class="navbar-brand" href="javascript:void(0)">
-        <img src="../assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
+        <%= image_tag("blue.png", alt: "...", class: "navbar-brand-img") %>
       </a>
     </div>
     <div class="navbar-inner">
@@ -69,31 +69,31 @@
         <!-- Navigation -->
         <ul class="navbar-nav mb-md-3">
           <li class="nav-item">
-            <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/getting-started/overview.html" target="_blank">
+            <a class="nav-link" href="https://alvaroalvarez.info" target="_blank">
               <i class="ni ni-spaceship"></i>
               <span class="nav-link-text">Getting started</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/foundation/colors.html" target="_blank">
+            <a class="nav-link" href="https://alvaroalvarez.info" target="_blank">
               <i class="ni ni-palette"></i>
               <span class="nav-link-text">Foundation</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/components/alerts.html" target="_blank">
+            <a class="nav-link" href="https://alvaroalvarez.info" target="_blank">
               <i class="ni ni-ui-04"></i>
               <span class="nav-link-text">Components</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/plugins/charts.html" target="_blank">
+            <a class="nav-link" href="https://alvaroalvarez.info" target="_blank">
               <i class="ni ni-chart-pie-35"></i>
               <span class="nav-link-text">Plugins</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active active-pro" href="upgrade.html">
+            <a class="nav-link active active-pro" href="https://alvaroalvarez.info">
               <i class="ni ni-send text-dark"></i>
               <span class="nav-link-text">Upgrade to PRO</span>
             </a>
@@ -137,12 +137,12 @@
           </li>
           <li class="nav-item d-sm-none">
             <a class="nav-link" href="#" data-action="search-show" data-target="#navbar-search-main">
-              <i class="ni ni-zoom-split-in"></i>
+              <i class="far fa-window-restore"></i>
             </a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="ni ni-bell-55"></i>
+              <i class="fas fa-bell"></i>
             </a>
             <div class="dropdown-menu dropdown-menu-xl  dropdown-menu-right  py-0 overflow-hidden">
               <!-- Dropdown header -->
@@ -155,7 +155,7 @@
                   <div class="row align-items-center">
                     <div class="col-auto">
                       <!-- Avatar -->
-                      <img alt="Image placeholder" src="../assets/img/theme/team-1.jpg" class="avatar rounded-circle">
+                      <%= image_tag("img/theme/team-1.jpg", alt: "Image placeholder", class: "avatar rounded-circle") %>
                     </div>
                     <div class="col ml--2">
                       <div class="d-flex justify-content-between align-items-center">
@@ -174,64 +174,7 @@
                   <div class="row align-items-center">
                     <div class="col-auto">
                       <!-- Avatar -->
-                      <img alt="Image placeholder" src="../assets/img/theme/team-2.jpg" class="avatar rounded-circle">
-                    </div>
-                    <div class="col ml--2">
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                          <h4 class="mb-0 text-sm">John Snow</h4>
-                        </div>
-                        <div class="text-right text-muted">
-                          <small>3 hrs ago</small>
-                        </div>
-                      </div>
-                      <p class="text-sm mb-0">A new issue has been reported for Argon.</p>
-                    </div>
-                  </div>
-                </a>
-                <a href="#!" class="list-group-item list-group-item-action">
-                  <div class="row align-items-center">
-                    <div class="col-auto">
-                      <!-- Avatar -->
-                      <img alt="Image placeholder" src="../assets/img/theme/team-3.jpg" class="avatar rounded-circle">
-                    </div>
-                    <div class="col ml--2">
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                          <h4 class="mb-0 text-sm">John Snow</h4>
-                        </div>
-                        <div class="text-right text-muted">
-                          <small>5 hrs ago</small>
-                        </div>
-                      </div>
-                      <p class="text-sm mb-0">Your posts have been liked a lot.</p>
-                    </div>
-                  </div>
-                </a>
-                <a href="#!" class="list-group-item list-group-item-action">
-                  <div class="row align-items-center">
-                    <div class="col-auto">
-                      <!-- Avatar -->
-                      <img alt="Image placeholder" src="../assets/img/theme/team-4.jpg" class="avatar rounded-circle">
-                    </div>
-                    <div class="col ml--2">
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                          <h4 class="mb-0 text-sm">John Snow</h4>
-                        </div>
-                        <div class="text-right text-muted">
-                          <small>2 hrs ago</small>
-                        </div>
-                      </div>
-                      <p class="text-sm mb-0">Let's meet at Starbucks at 11:30. Wdyt?</p>
-                    </div>
-                  </div>
-                </a>
-                <a href="#!" class="list-group-item list-group-item-action">
-                  <div class="row align-items-center">
-                    <div class="col-auto">
-                      <!-- Avatar -->
-                      <img alt="Image placeholder" src="../assets/img/theme/team-5.jpg" class="avatar rounded-circle">
+                      <%= image_tag("img/theme/team-2.jpg", alt: "Image placeholder", class: "avatar rounded-circle") %>
                     </div>
                     <div class="col ml--2">
                       <div class="d-flex justify-content-between align-items-center">
@@ -302,7 +245,7 @@
             <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <div class="media align-items-center">
                 <span class="avatar avatar-sm rounded-circle">
-                  <img alt="Image placeholder" src="../assets/img/theme/team-4.jpg">
+                  <%= image_tag("img/theme/team-4.jpg", alt: "Image placeholder") %>
                 </span>
                 <div class="media-body  ml-2  d-none d-lg-block">
                   <span class="mb-0 text-sm  font-weight-bold">John Snow</span>
@@ -373,7 +316,7 @@
                     <span class="h2 font-weight-bold mb-0">350,897</span>
                   </div>
                   <div class="col-auto">
-                    <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
+                    <div class="icon-shape bg-gradient-red text-white rounded-circle shadow">
                       <i class="ni ni-active-40"></i>
                     </div>
                   </div>
@@ -395,7 +338,7 @@
                     <span class="h2 font-weight-bold mb-0">2,356</span>
                   </div>
                   <div class="col-auto">
-                    <div class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
+                    <div class="icon-shape bg-gradient-orange text-white rounded-circle shadow">
                       <i class="ni ni-chart-pie-35"></i>
                     </div>
                   </div>
@@ -417,7 +360,7 @@
                     <span class="h2 font-weight-bold mb-0">924</span>
                   </div>
                   <div class="col-auto">
-                    <div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
+                    <div class="icon-shape bg-gradient-green text-white rounded-circle shadow">
                       <i class="ni ni-money-coins"></i>
                     </div>
                   </div>
@@ -439,7 +382,7 @@
                     <span class="h2 font-weight-bold mb-0">49,65%</span>
                   </div>
                   <div class="col-auto">
-                    <div class="icon icon-shape bg-gradient-info text-white rounded-circle shadow">
+                    <div class="icon-shape bg-gradient-info text-white rounded-circle shadow">
                       <i class="ni ni-chart-bar-32"></i>
                     </div>
                   </div>
