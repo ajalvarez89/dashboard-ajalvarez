@@ -12,6 +12,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'devise', '~> 4.7', '>= 4.7.1'
 
+gem 'jquery-rails'
+gem 'font-awesome-sass', '~> 5.12.0'
 
 gem 'bootsnap', '>= 1.4.2', require: false
 
