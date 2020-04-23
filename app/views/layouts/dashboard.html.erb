@@ -17,5 +17,15 @@
 
   <body>
     <%= yield %>
+    <%= javascript_include_tag "/vendor/jquery/dist/jquery.min.js" %>
+    <%= javascript_include_tag "/vendor/bootstrap/dist/js/bootstrap.bundle.min.js" %>
+    <%= javascript_include_tag "/vendor/js-cookie/js.cookie.js" %>
+    <%= javascript_include_tag "/vendor/jquery.scrollbar/jquery.scrollbar.min.js" %>
+    <%= javascript_include_tag "/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js" %>
+
+    <%= javascript_include_tag "/vendor/chart.js/dist/Chart.min.js" %>
+    <%= javascript_include_tag "/vendor/chart.js/dist/Chart.extension.js" %>
+
+    <%= javascript_include_tag "/vendor/js/argon.js" %>
   </body>
 </html>

@@ -1,16 +1,53 @@
-<h2>Forgot your password?</h2>
-
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+<div class="main-content">
+  <!-- Header -->
+  <div class="header bg-gradient-primary py-7 py-lg-8 pt-lg-9">
+    <div class="container">
+      <div class="header-body text-center mb-7">
+        <div class="row justify-content-center">
+          <div class="col-xl-5 col-lg-6 col-md-8 px-5">
+            <h1 class="text-white">Forgot your password?</h1>
+            <p class="text-lead text-white">Use these awesome forms for requesting new password.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="separator separator-bottom separator-skew zindex-100">
+      <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
+      </svg>
+    </div>
   </div>
+  <!-- Page content -->
+  <div class="container mt--8 pb-5">
+    <!-- Table -->
+    <div class="row justify-content-center">
+      <div class="col-lg-5 col-md-7">
+        <div class="card bg-secondary border-0">
+          <div class="card-body px-lg-5 py-lg-5">
+            <p class="text-center"><%= notice %></p>
+            <p class="text-center"><%= alert %></p>
+            <div class="text-center text-muted mb-4">
+              <small>Enter your email account:</small>
+            </div>
+            <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+              <%= render "devise/shared/error_messages", resource: resource %>
 
-  <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
+              <div class="form-group">
+                <div class="input-group input-group-merge input-group-alternative mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-envelope-open"></i></span>
+                  </div>
+                  <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: "form-control" %>
+                </div>
+              </div>
+
+              <div class="text-center">
+                <%= f.submit "Send me reset password instructions", class: "btn btn-primary my-4" %>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-<% end %>
-
-<%= render "users/shared/links" %>
+</div>
